@@ -31,6 +31,16 @@ if [ ! -d "$externalResourcesDir" ]; then
   mkdir $externalResourcesDir
 fi
 
+echo "[Info] stonDir=${stonDir}"
+if [ ! -d "$stonDir" ]; then
+  echo "[Info] Cloning git repo '${stonRepo}'"
+  git clone $stonRepo  $stonDir
+  git -C $stonDir checkout gs_port
+else
+  echo "[Info] Update git repo '${stonRepo}'"
+  git -C $stonDir pull
+fi
+
 echo "[Info] Configuring scripts"
 
 if [ ! -d "$externalScripts" ]; then
