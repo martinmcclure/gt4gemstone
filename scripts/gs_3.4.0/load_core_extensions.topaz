@@ -1,12 +1,12 @@
-input $GT4GEMSTONE/scripts/gs_3.3.0/extensions_block.gs
+input $GT4GEMSTONE/scripts/gs_3.4.0/extensions_block.gs
 errorCount
-input $GT4GEMSTONE/scripts/gs_3.3.0/extensions_character_collection.gs
+input $GT4GEMSTONE/scripts/gs_3.4.0/extensions_character_collection.gs
 errorCount
-input $GT4GEMSTONE/scripts/gs_3.3.0/extensions_symbol.gs
+input $GT4GEMSTONE/scripts/gs_3.4.0/extensions_symbol.gs
 errorCount
-input $GT4GEMSTONE/scripts/gs_3.3.0/extensions_object.gs
+input $GT4GEMSTONE/scripts/gs_3.4.0/extensions_object.gs
 errorCount
-input $GT4GEMSTONE/scripts/gs_3.3.0/extensions_character.gs
+input $GT4GEMSTONE/scripts/gs_3.4.0/extensions_character.gs
 errorCount
-input $GT4GEMSTONE/scripts/gs_3.3.0/extensions_client_forwarder.gs
+input $GT4GEMSTONE/scripts/gs_3.4.0/extensions_client_forwarder.gs
 errorCount

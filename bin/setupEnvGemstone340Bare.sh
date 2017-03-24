@@ -23,7 +23,7 @@ internalScripts="${GT4GEMSTONE}/scripts/gs_3.4.0"
 externalScripts="${externalResourcesDir}/scripts/gs_3.4.0"
 cypressDir="${GS_HOME}/shared/repos/CypressReferenceImplementation"
 cypressRepo="https://github.com/dalehenrich/CypressReferenceImplementation.git"
-stonDir="${GS_HOME}/shared/repos/ston"
+stonDir="${externalResourcesDir}/ston"
 stonRepo="https://github.com/GsDevKit/ston.git"
 
 

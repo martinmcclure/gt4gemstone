@@ -1,3 +1,6 @@
+display pauseonerror
+output push load.out
+iferr 1 stk
 input $GT4GEMSTONE/scripts/gs_3.4.0/load_core_extensions.topaz
 errorCount
 input $GT4GEMSTONE/scripts/gs_3.4.0/bootstrap_cypress.topaz

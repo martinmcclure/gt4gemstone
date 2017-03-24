@@ -15,7 +15,7 @@ UserGlobals removeKey: #Cypress_SUPPORT_REPO
 %
 run
 UserGlobals at: #Metacello_SUPPORT_REPO put: '$GS_SHARED_REPO_METACELLO'.
-UserGlobals at: #Metacello_SUPPORT_REPO put: 'filetree://$GS_HOME/server/stones/metacello/git/metacello-work/repository/'
+UserGlobals at: #Metacello_SUPPORT_REPO put: 'filetree:///export/foos1/users/dhenrich/dev/_home/server/stones/metacello/git/metacello-work/repository/'
 %
 input $GS_HOME/shared/topaz/metacello/loadMetacelloSupport.topaz
 errorCount
