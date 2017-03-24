@@ -1,28 +1,17 @@
-input $GS_HOME/shared/topaz/uuid/bootstrapUUIDSupport.topaz
+input $GT4GEMSTONE/external/CypressReferenceImplementation/topaz/Cypress-GemStoneCompatibilityLayer.gs
 errorCount
-commit
-input $upgradeDir/bootstrapMetacelloSupport.topaz
+input $GT4GEMSTONE/external/CypressReferenceImplementation/topaz/Cypress-Definitions.gs
 errorCount
-commit
-run
-UserGlobals at: #Cypress_SUPPORT_REPO put: '$GS_HOME/shared/repos/CypressReferenceImplementation/cypress/'
-%
-input $GS_HOME/shared/topaz/cypress/loadCypressSupport.topaz
+input $GT4GEMSTONE/external/CypressReferenceImplementation/topaz/Cypress-Structure.gs
 errorCount
-commit
-run
-UserGlobals removeKey: #Cypress_SUPPORT_REPO
-%
-run
-UserGlobals at: #Metacello_SUPPORT_REPO put: '$GS_SHARED_REPO_METACELLO'.
-UserGlobals at: #Metacello_SUPPORT_REPO put: 'filetree:///export/foos1/users/dhenrich/dev/_home/server/stones/metacello/git/metacello-work/repository/'
-%
-input $GS_HOME/shared/topaz/metacello/loadMetacelloSupport.topaz
+input $GT4GEMSTONE/external/CypressReferenceImplementation/topaz/Cypress-GemStoneFileServer.gs
 errorCount
-commit
-run
-UserGlobals removeKey: #Metacello_SUPPORT_REPO
-%
+input $GT4GEMSTONE/external/CypressReferenceImplementation/topaz/Network-Url.gs
 errorCount
-commit
+input $GT4GEMSTONE/external/CypressReferenceImplementation/topaz/Cypress-MesssageDigest.gs
+errorCount
+input $GT4GEMSTONE/external/CypressReferenceImplementation/topaz/Cypress-PackageManagement.gs
+errorCount
+input $GT4GEMSTONE/external/CypressReferenceImplementation/topaz/Cypress-Comparison.gs
+errorCount
 

@@ -21,7 +21,7 @@ export GT4GEMSTONE_REPO="${GT4GEMSTONE}/src/"
 externalResourcesDir="${GT4GEMSTONE}/external"
 internalScripts="${GT4GEMSTONE}/scripts/gs_3.4.0"
 externalScripts="${externalResourcesDir}/scripts/gs_3.4.0"
-cypressDir="${GS_HOME}/shared/repos/CypressReferenceImplementation"
+cypressDir="${externalResourcesDir}/CypressReferenceImplementation"
 cypressRepo="https://github.com/dalehenrich/CypressReferenceImplementation.git"
 stonDir="${externalResourcesDir}/ston"
 stonRepo="https://github.com/GsDevKit/ston.git"
@@ -29,6 +29,15 @@ stonRepo="https://github.com/GsDevKit/ston.git"
 
 if [ ! -d "$externalResourcesDir" ]; then
   mkdir $externalResourcesDir
+fi
+
+echo "[Info] cypressDir=${cypressDir}"
+if [ ! -d "$cypressDir" ]; then
+  echo "[Info] Cloning git repo '${cypressRepo}'"
+  git clone $cypressRepo  $cypressDir
+else
+  echo "[Info] Updating git repo '${cypressRepo}'"
+  git -C $cypressDir pull
 fi
 
 echo "[Info] stonDir=${stonDir}"
