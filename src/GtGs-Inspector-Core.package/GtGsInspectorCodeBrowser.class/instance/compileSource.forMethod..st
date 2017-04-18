@@ -18,4 +18,3 @@ compileSource: theSource forMethod: aMethod
     			category: (aMethod category ifNil: [ 'as yet unclassified' ])
    				environmentId: 0 ]
 
-  
