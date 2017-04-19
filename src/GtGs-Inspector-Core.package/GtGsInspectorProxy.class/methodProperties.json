@@ -2,7 +2,7 @@
 	"class" : {
 		"createAndSerializeProxyFor:andSelect:" : "AndreiChis 3/12/2017 23:48",
 		"createAndSerializeProxyForOop:andSelect:" : "AndreiChis 3/12/2017 23:49",
-		"forObject:" : "AndreiChis 4/2/2017 11:44",
+		"forObject:" : "AndreiChis 4/2/2017 12:14:41",
 		"forOop:" : "AndreiChis 3/12/2017 23:48",
 		"proxyForObject:" : "AndreiChis 3/13/2017 11:56",
 		"proxyMappings" : "AndreiChis 3/13/2017 11:56" },
@@ -13,7 +13,7 @@
 		"computeRequestTypeForRemotePresentation:" : "AndreiChis 3/16/2017 22:32",
 		"doesNotUnderstand:" : "AndreiChis 3/22/2017 11:41:30",
 		"excludedInstVarNames" : "AndreiChis 10/10/2016 16:00",
-		"forObject:" : "AndreiChis 4/2/2017 11:43",
+		"forObject:" : "AndreiChis 4/2/2017 12:14:41",
 		"fromSton:" : "AndreiChis 10/3/2016 18:51",
 		"gemstoneClient" : "AndreiChis 10/10/2016 16:01",
 		"gemstoneClient:" : "AndreiChis 10/15/2016 12:40",
