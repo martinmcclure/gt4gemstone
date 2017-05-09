@@ -1,2 +1,2 @@
-(name 'GtGs-Inspector-Core-AndreiChis.224' message 'Added an experimental #GtGsGlmLocalMorphPresentation' id '76fff70b-8e08-0d00-8ba8-ad0405093c15' date '2 April 2017' time '12:14:36.419204 pm' author 'AndreiChis' ancestors ((name 'GtGs-Inspector-Core-AndreiChis.223' message 'Always keep a reference to an inspector proxy in a remote image.
-' id '431f8f31-1999-580a-97ed-3dccfc549ce4' date '2 April 2017' time '11:46:09 am' author 'AndreiChis' ancestors () stepChildren ())) stepChildren ())
+(name 'GtGs-Inspector-Core-AndreiChis.240' message 'Fixed more issues related to #category' id '9ec1913f-c1f1-4511-995a-cbe3b46cb67f' date '9 May 2017' time '11:57:38.630622 am' author 'AndreiChis' ancestors ((name 'GtGs-Inspector-Core-AndreiChis.239' message 'Do not call GsNMethod>>#category as it is defined by Cypress.
+' id 'eab43439-e19c-55d3-8f5c-90da6ac4c457' date '9 May 2017' time '12:05:41 am' author 'AndreiChis' ancestors () stepChildren ())) stepChildren ())

@@ -1,2 +1,2 @@
-(name 'GtGs-Editor-Core-AndreiChis.8' message 'fixed extension methods in ClassOrganizer' id '1213bb4a-6a2e-415d-ad70-ae41b7bd6894' date '21 March 2017' time '11:53:35.063974 pm' author 'AndreiChis' ancestors ((name 'GtGs-Editor-Core-AndreiChis.7' message 'Added support for a cache ClassOrganizer.
-' id '642eba17-210d-5cff-b80d-fd3144a9a943' date '21 March 2017' time '11:31:32 pm' author 'AndreiChis' ancestors () stepChildren ())) stepChildren ())
+(name 'GtGs-Editor-Core-AndreiChis.24' message 'Fixed more issues related to #category' id '31647f61-177a-4bb2-b235-e3ac76b91f45' date '9 May 2017' time '11:58:29.285152 am' author 'AndreiChis' ancestors ((name 'GtGs-Editor-Core-AndreiChis.23' message 'Prevent the garbage collection of the message browser.
+' id '5fbf9fc3-f9d7-5090-b1e6-ffeda59f7afe' date '4 May 2017' time '2:34:25 pm' author 'AndreiChis' ancestors () stepChildren ())) stepChildren ())
