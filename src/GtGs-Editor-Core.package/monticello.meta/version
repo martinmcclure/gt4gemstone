@@ -1,2 +1,2 @@
-(name 'GtGs-Editor-Core-AndreiChis.8' message 'fixed extension methods in ClassOrganizer' id '1213bb4a-6a2e-415d-ad70-ae41b7bd6894' date '21 March 2017' time '11:53:35.063974 pm' author 'AndreiChis' ancestors ((name 'GtGs-Editor-Core-AndreiChis.7' message 'Added support for a cache ClassOrganizer.
-' id '642eba17-210d-5cff-b80d-fd3144a9a943' date '21 March 2017' time '11:31:32 pm' author 'AndreiChis' ancestors () stepChildren ())) stepChildren ())
+(name 'GtGs-Editor-Core-AndreiChis.25' message 'Return an explicit nill is GtGs_Cached_Class_Organizer is missing in the SessionTemps' id '94c949c8-4508-4888-8fec-a282c47d71a8' date '9 May 2017' time '10:22:45.981226 pm' author 'AndreiChis' ancestors ((name 'GtGs-Editor-Core-AndreiChis.24' message 'Fixed more issues related to #category
+' id '474acc5a-29df-561d-83f1-c32d1c3dd309' date '9 May 2017' time '11:58:34 am' author 'AndreiChis' ancestors () stepChildren ())) stepChildren ())

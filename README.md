@@ -8,16 +8,20 @@ To create a new client containing the latest version, after installing [GsDevKit
 
     cd $GS_HOME/shared/repos
     git clone https://github.com/feenkcom/gt4gemstone.git
-    createClient -t pharo Gt4Gemstone -l -v Pharo5.0 -z $GS_HOME/shared/repos/gt4gemstone/.smalltalk.ston
+    createClient -t pharo Gt4Gemstone -l -v Pharo5.0 -s gs_333 -z $GS_HOME/shared/repos/gt4gemstone/.smalltalk.ston
     startClient Gt4Gemstone -s Gt4Gemstone
 
 For creating a new stone containing the latest version use:
 
     createStone -u http://ws.stfx.eu/4TIV0I28KZ6O?format=text -i Gt4Gemstone -l Gt4Gemstone Gt4Gemstone 3.3.3
 
-In a stone where GsDevKit is present the server code can be installed with tODE using the specification at https://raw.githubusercontent.com/feenkcom/gt4gemstone/master/.smalltalk.ston.
+For installing gt4gemstone in a stone that has GsDevKit installed see [gt4gemstone server instalation using GsDevKit](doc/gsdevkitGemStoneInstallation.md).
 
-For installing the gt4gemstone in a stone that does not require GsDevKit see [gt4gemstone server instalation without GsDevKit](doc/bareGemStoneInstallation.md). For installing and configuring GsDevKit on Windows see [GsDevKit Windows Installation](doc/windowsGsDevKitInstallation.md)
+For installing gt4gemstone in a stone doesn't have GsDevKit see [gt4gemstone server instalation without GsDevKit](doc/bareGemStoneInstallation.md). 
+
+For installing and configuring GsDevKit on Windows see [GsDevKit Windows Installation](doc/windowsGsDevKitInstallation.md).
+
+Once you installed gt4gemstone you can take at a look at some [examples](doc/basicCodeSnippets.md) of how to use a gemstone client.
 
 ## Connecting to a stone
 
