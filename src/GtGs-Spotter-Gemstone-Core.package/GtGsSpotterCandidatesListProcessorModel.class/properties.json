@@ -1,0 +1,21 @@
+{
+	"category" : "GtGs-Spotter-Gemstone-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"itemsBlock",
+		"allCandidatesBlock",
+		"titleBlock",
+		"itemNameBlock",
+		"gsActBlock",
+		"wantsToDisplayOnEmptyQuery",
+		"cachedCandidates",
+		"searchResults" ],
+	"name" : "GtGsSpotterCandidatesListProcessorModel",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

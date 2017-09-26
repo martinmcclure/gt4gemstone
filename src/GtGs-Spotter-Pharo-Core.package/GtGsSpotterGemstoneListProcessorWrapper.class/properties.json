@@ -1,0 +1,16 @@
+{
+	"category" : "GtGs-Spotter-Pharo-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"stepOop",
+		"gemstoneClient",
+		"processorProxy" ],
+	"name" : "GtGsSpotterGemstoneListProcessorWrapper",
+	"pools" : [
+		 ],
+	"super" : "GTSpotterAbstractGemstoneProcessor",
+	"type" : "normal" }
