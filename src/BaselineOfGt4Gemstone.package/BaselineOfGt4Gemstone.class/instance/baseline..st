@@ -93,30 +93,39 @@ baseline: spec
                   			yourself ].
 		spec
 			package: 'GtGs-ClientGemstone-Core' with: [ spec requires: #('Tode') ];
+			package: 'GtGs-ClientGemstone-Topez' with: [ spec requires: #('GtGs-ClientGemstone-Core') ];
+			package: 'GtGs-Spotter-Gemstone-Core' with: [ spec requires: #('GtGs-Inspector-Core') ];
+			package: 'GtGs-Inspector-Roassal-Core';
 			yourself.
+		spec
+			group: 'Core'
+				with: #('GtGs-ClientGemstone-Topez' 'GtGs-Spotter-Gemstone-Core' 'GtGs-Inspector-Roassal-Core');
+			yourself
          ].
 	 spec for: #( #'gemstone64' ) do: [
 		spec
-			package: 'GtGs-ClientGemstone-Core';
+			package: 'GtGs-Gemstone-Stubs-Basic';
+			package: 'GtGs-ClientGemstone-Core'  with: [ spec requires: #('GtGs-Gemstone-Stubs-Basic') ];
 			yourself.
+		spec
+			group: 'Core'
+				with: #('GtGs-Gemstone-Stubs-Basic');
+			yourself
          ].
 	 spec for: #( #'gemstone' #'gemstone64' ) do: [
 		spec
-			package: 'GtGs-ClientGemstone-Topez' with: [ spec requires: #('GtGs-ClientGemstone-Core') ];
 			package: 'GtGs-Inspector-Core' with: [ spec requires: #('GtGs-ClientGemstone-Core') ];
 			package: 'GtGs-Inspector-SystemExtensions' with: [ spec requires: #('GtGs-Inspector-Core') ];
 			package: 'GtGs-Inspector-Extensions'  with: [ spec requires: #('GtGs-Inspector-Core') ];
-			package: 'GtGs-Spotter-Gemstone-Core' with: [ spec requires: #('GtGs-Inspector-Core') ];
 			package: 'GtGs-Editor-Core' with: [ spec requires: #('GtGs-Inspector-Core') ];
 			package: 'GtGs-Debugger-Core'  with: [ spec requires: #('GtGs-Inspector-Core') ];
-			package: 'GtGs-Inspector-Roassal-Core';
 			package: 'GtGs-Common-Resources-Tests';
 			package: 'GtGs-Inspector-Gemstone-Tests' with: [ spec requires: #('GtGs-Inspector-Core' 'GtGs-Common-Resources-Tests') ];
 			package: 'GtGs-Examples-AddressBook-Model'.
 			
 		spec
 			group: 'Core'
-				with: #('GtGs-ClientGemstone-Core' 'GtGs-ClientGemstone-Topez' 'GtGs-Inspector-Core' 'GtGs-Editor-Core' 'GtGs-Inspector-Extensions' 'GtGs-Debugger-Core' 'GtGs-Spotter-Gemstone-Core' 'GtGs-Inspector-Roassal-Core');
+				with: #('GtGs-ClientGemstone-Core' 'GtGs-Inspector-Core' 'GtGs-Editor-Core' 'GtGs-Inspector-Extensions' 'GtGs-Debugger-Core');
 			group: 'Tests'
 				with: #('GtGs-Inspector-Gemstone-Tests' 'GtGs-Common-Resources-Tests');
 			group: 'Examples'
