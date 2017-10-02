@@ -82,18 +82,26 @@ baseline: spec
 			group: 'PharoExtensions'
 				with: #('GT-Debugger' 'GT-Inspector' 'Glamour-FastTable' 'Glamour-Core' 'Glamour-Morphic-Renderer').
 	].
-	
-	 spec for: #'gemstone' do: [
 
+	spec for: #( #'gemstone' ) do: [
 		spec
 			baseline: 'Tode'
          		with: [ 
-              spec
+              			spec
 					loads: #('Topez-Server-3x-DebugTools');
-                repository: 'github://dalehenrich/tode:dev/repository' ].
-
+                			repository: 'github://dalehenrich/tode:dev/repository';
+                  			yourself ].
 		spec
 			package: 'GtGs-ClientGemstone-Core' with: [ spec requires: #('Tode') ];
+			yourself.
+         ].
+	 spec for: #( #'gemstone64' ) do: [
+		spec
+			package: 'GtGs-ClientGemstone-Core';
+			yourself.
+         ].
+	 spec for: #( #'gemstone' #'gemstone64' ) do: [
+		spec
 			package: 'GtGs-ClientGemstone-Topez' with: [ spec requires: #('GtGs-ClientGemstone-Core') ];
 			package: 'GtGs-Inspector-Core' with: [ spec requires: #('GtGs-ClientGemstone-Core') ];
 			package: 'GtGs-Inspector-SystemExtensions' with: [ spec requires: #('GtGs-Inspector-Core') ];
