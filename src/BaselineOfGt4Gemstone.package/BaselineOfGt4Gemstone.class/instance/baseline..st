@@ -93,23 +93,24 @@ baseline: spec
                   			yourself ].
 		spec
 			package: 'GtGs-ClientGemstone-Core' with: [ spec requires: #('Tode') ];
+			package: 'GtGs-ClientGemstone33x-Core'  with: [ spec requires: #('GtGs-ClientGemstone-Core') ];
 			package: 'GtGs-ClientGemstone-Topez' with: [ spec requires: #('GtGs-ClientGemstone-Core') ];
 			package: 'GtGs-Spotter-Gemstone-Core' with: [ spec requires: #('GtGs-Inspector-Core') ];
-			package: 'GtGs-Inspector-Roassal-Core';
 			yourself.
 		spec
 			group: 'Core'
-				with: #('GtGs-ClientGemstone-Topez' 'GtGs-Spotter-Gemstone-Core' 'GtGs-Inspector-Roassal-Core');
+				with: #('GtGs-ClientGemstone-Topez' 'GtGs-Spotter-Gemstone-Core' 'GtGs-ClientGemstone33x-Core' );
 			yourself
          ].
 	 spec for: #( #'gemstone64' ) do: [
 		spec
 			package: 'GtGs-Gemstone-Stubs-Basic';
 			package: 'GtGs-ClientGemstone-Core'  with: [ spec requires: #('GtGs-Gemstone-Stubs-Basic') ];
+			package: 'GtGs-ClientGemstone34x-Core'  with: [ spec requires: #('GtGs-ClientGemstone-Core') ];
 			yourself.
 		spec
 			group: 'Core'
-				with: #('GtGs-Gemstone-Stubs-Basic');
+				with: #('GtGs-Gemstone-Stubs-Basic' 'GtGs-ClientGemstone34x-Core');
 			yourself
          ].
 	 spec for: #( #'gemstone' #'gemstone64' ) do: [
@@ -121,11 +122,12 @@ baseline: spec
 			package: 'GtGs-Debugger-Core'  with: [ spec requires: #('GtGs-Inspector-Core') ];
 			package: 'GtGs-Common-Resources-Tests';
 			package: 'GtGs-Inspector-Gemstone-Tests' with: [ spec requires: #('GtGs-Inspector-Core' 'GtGs-Common-Resources-Tests') ];
+			package: 'GtGs-Inspector-Roassal-Core' with: [ spec requires: #( 'GtGs-Examples-AddressBook-Model' ) ];
 			package: 'GtGs-Examples-AddressBook-Model'.
 			
 		spec
 			group: 'Core'
-				with: #('GtGs-ClientGemstone-Core' 'GtGs-Inspector-Core' 'GtGs-Editor-Core' 'GtGs-Inspector-Extensions' 'GtGs-Debugger-Core');
+				with: #('GtGs-ClientGemstone-Core' 'GtGs-Inspector-Core' 'GtGs-Editor-Core' 'GtGs-Inspector-Extensions' 'GtGs-Debugger-Core' 'GtGs-Inspector-Roassal-Core');
 			group: 'Tests'
 				with: #('GtGs-Inspector-Gemstone-Tests' 'GtGs-Common-Resources-Tests');
 			group: 'Examples'
